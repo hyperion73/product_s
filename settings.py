@@ -5,6 +5,8 @@ import os
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # 이 부분이 중요함!
 
+SECRET_KEY = os.getenv("SECRET_KEY", "your-default-secret-key")
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-please-change-this'
