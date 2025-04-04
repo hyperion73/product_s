@@ -1,3 +1,2 @@
-Django>=4.2
-pandas
-xlsxwriter
+Django>=3.2
+gunicorn
